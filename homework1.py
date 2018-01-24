@@ -13,7 +13,7 @@ def vietas_solution(b,c): #решение с помощью теоремы виета
     else:
         sqd = cmath.sqrt(d)
         x1 = (-b + sqd) / 2.0
-        x2 = (-b + sqd) / 2.0
+        x2 = (-b - sqd) / 2.0
     return x1, x2
 def machineEpsilon(e): #ищет машинный эпсилон (понадобится для функции taylor_solution)
     e = 1.0
