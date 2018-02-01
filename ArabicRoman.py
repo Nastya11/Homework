@@ -30,8 +30,21 @@ def get_multiplier(unit): #попытка заменить switch/case, кото
         print ('enter arabic number:')
         r=to_roman(int(input()))
         return r
-   
+    if unit == '3':
+        print ('Test:')
+        lst=[]
+        lst.append('MDCCXXXII => {}'.format(to_arabic('MDCCXXXII')))
+        lst.append('MCMXI => {}'.format(to_arabic('MCMXI')))
+        lst.append('MDCCL => {}'.format(to_arabic('MDCCL')))
+        lst.append('MDLXXXVIIII => {}'.format(to_arabic('MDLXXXVIIII')))
+        lst.append('MDXCIII => {}'.format(to_arabic('MDXCIII')))
+        lst.append('499 => {}'.format(to_roman(499)))
+        lst.append('1866 => {}'.format(to_roman(1866)))
+        lst.append('2095 => {}'.format(to_roman(2095)))
+        lst.append('54 => {}'.format(to_roman(54)))
+        lst.append('170 => {}'.format(to_roman(170)))
+        return lst
         
-print ('Type 1 if you want to convert to arabic. Type 2 if you want to convert to roman')
+print ('Type 1 if you want to convert to arabic. Type 2 if you want to convert to roman. Type 3 to see the test numbers')
 result=get_multiplier(str(input()))
 print(result)
