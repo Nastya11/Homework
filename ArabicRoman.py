@@ -1,9 +1,12 @@
 def to_roman(n): #перевод в римские
     roman = ''
-    for arabic, keys in zip((1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1),
+    if n>3999:
+      print ("Wikipedia says we can't write numbers more than 3999 in M,D,C,L,X,I")
+    else:
+      for arabic, keys in zip((1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1),
                              'M     CM   D    CD   C    XC  L   XL  X   IX V  IV I'.split()):
-        roman += n // arabic * keys
-        n %= arabic
+          roman += n // arabic * keys
+          n %= arabic
     return roman
 
 
@@ -47,4 +50,5 @@ def get_multiplier(unit): #попытка заменить switch/case, кото
         
 print ('Type 1 if you want to convert to arabic. Type 2 if you want to convert to roman. Type 3 to see the test numbers')
 result=get_multiplier(str(input()))
+print(result)
 print(result)
