@@ -42,7 +42,7 @@ def get_multiplier(unit): #попытка заменить switch/case, кото
         lst.append('1866 => {}'.format(to_roman(1866)))
         lst.append('2095 => {}'.format(to_roman(2095)))
         lst.append('54 => {}'.format(to_roman(54)))
-        lst.append('170 => {}'.format(to_roman(170)))
+        lst.append('5170 => {}'.format(to_roman(5170)))
         return lst
         
 print ('Type 1 if you want to convert to arabic. Type 2 if you want to convert to roman. Type 3 to see the test numbers')
