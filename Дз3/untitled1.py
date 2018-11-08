@@ -71,4 +71,4 @@ def main():
     print ( tau, mu1, sigma1, mu2, sigma2)
     
 if __name__ == '__main__':
-    main()
+    main() 
